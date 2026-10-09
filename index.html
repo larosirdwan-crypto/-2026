@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jibal Al Maghrib - جبال المغرب</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:'Tajawal',sans-serif}
+        body{background:#f8fafc;color:#1e293b}
+        nav{position:fixed;top:0;width:100%;background:rgba(255,255,255,0.9);backdrop-filter:blur(10px);padding:15px 5%;display:flex;justify-content:space-between;align-items:center;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,0.05)}
+        nav h2{color:#0f766e;font-weight:800}
+        nav a{margin-right:20px;text-decoration:none;color:#334155;font-weight:700}
+        .hero{height:90vh;background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?q=80&w=2000') center/cover;display:flex;flex-direction:column;justify-content:center;align-items:center;color:white;text-align:center;padding:20px}
+        .hero h1{font-size:3.5rem;margin-bottom:15px}
+        .hero p{font-size:1.2rem;max-width:600px;margin-bottom:25px}
+        .btn{background:#14b8a6;color:white;padding:12px 30px;border-radius:30px;text-decoration:none;font-weight:700;transition:0.3s}
+        .btn:hover{background:#0f766e}
+        section{padding:80px 8%}
+        .title{text-align:center;margin-bottom:50px}
+        .title h2{font-size:2.5rem;color:#0f766e}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px}
+        .card{background:white;border-radius:20px;overflow:hidden;box-shadow:0 10px 25px rgba(0,0,0,0.07);transition:0.3s}
+        .card:hover{transform:translateY(-8px)}
+        .card img{width:100%;height:220px;object-fit:cover}
+        .card .info{padding:20px}
+        .card .info h3{margin-bottom:10px;color:#0f172a}
+        .card .info p{color:#64748b;font-size:0.95rem;line-height:1.6}
+        .tag{display:inline-block;background:#ccfbf1;color:#0f766e;padding:5px 12px;border-radius:20px;font-size:0.8rem;margin-top:10px;font-weight:700}
+        .culture{background:#0f172a;color:white}
+        .culture .card{background:#1e293b;color:white}
+        .culture .card .info h3{color:white}
+        .culture .card .info p{color:#94a3b8}
+        footer{text-align:center;padding:30px;background:#020617;color:#94a3b8}
+    </style>
+</head>
+<body>
+
+<nav>
+    <h2>⛰️ JIBAL</h2>
+    <div>
+        <a href="#jibal">الجبال</a>
+        <a href="#anshita">الأنشطة</a>
+        <a href="#thaqafa">الثقافة</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>اكتشف سحر جبال المغرب</h1>
+    <p>من قمم الأطلس الشامخة إلى ثقافة الأمازيغ العريقة، رحلة لا تُنسى في قلب الطبيعة</p>
+    <a href="#jibal" class="btn">ابدأ الاستكشاف</a>
+</div>
+
+<section id="jibal">
+    <div class="title"><h2>جبالنا الشهيرة</h2><p>أشهر القمم الجبلية في المغرب</p></div>
+    <div class="grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1533130061792-64b345e4a833?q=80&w=800" alt="Toubkal">
+            <div class="info"><h3>جبل توبقال - 4167م</h3><p>أعلى قمة في شمال إفريقيا، تقع في الأطلس الكبير قرب مراكش. وجهة عالمية للمتسلقين.</p><span class="tag">الأطلس الكبير</span></div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800" alt="Atlas">
+            <div class="info"><h3>إمليل وادي أزادن</h3><p>قرية جبلية ساحرة، بوابة توبقال، مشهورة ببيوتها الطينية وكرم أهلها.</p><span class="tag">قرية أمازيغية</span></div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800" alt="Rif">
+            <div class="info"><h3>جبال الريف - شفشاون</h3><p>جبال خضراء مطلة على البحر، طبيعة خلابة وهدوء لا مثيل له في الشمال.</p><span class="tag">جبال الريف</span></div>
+        </div>
+    </div>
+</section>
+
+<section id="anshita" style="background:#f1f5f9">
+    <div class="title"><h2>أنشطة جبلية</h2><p>ماذا يمكنك أن تفعل في الجبال؟</p></div>
+    <div class="grid">
+        <div class="card"><img src="https://images.unsplash.com/photo-1551632811-561732d1e306?q=80&w=800"><div class="info"><h3>🥾 المشي والتخييم</h3><p>مسارات رائعة للمشي لمسافات طويلة مع مخيمات تحت النجوم.</p></div></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1521292270410-a8c4d716d518?q=80&w=800"><div class="info"><h3>🧗 التسلق</h3><p>تحدي قمم توبقال ومگـون للمحترفين والمبتدئين مع مرشدين محليين.</p></div></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800"><div class="info"><h3>📸 التصوير</h3><p>مناظر بانورامية، شروق الشمس فوق الغيوم، وقرى معلقة في الجبال.</p></div></div>
+    </div>
+</section>
+
+<section id="thaqafa" class="culture">
+    <div class="title"><h2 style="color:white">الثقافة الأمازيغية</h2><p style="color:#94a3b8">روح الجبال الحقيقية</p></div>
+    <div class="grid">
+        <div class="card"><img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?q=80&w=800"><div class="info"><h3>الضيافة والشاي</h3><p>الشاي بالنعناع والخبز الطابوني، كرم أمازيغي أصيل لن تنساه أبدا.</p></div></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1491557345352-11d52307057d?q=80&w=800"><div class="info"><h3>الصناعة التقليدية</h3><p>زرابي يدوية، فخار، وحلي أمازيغية مصنوعة بحب في القرى الجبلية.</p></div></div>
+        <div class="card"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=800"><div class="info"><h3>الموسيقى والأهازيج</h3><p>أحيدوس وأغاني الأطلس، إيقاعات تحكي قصة الجبل والإنسان.</p></div></div>
+    </div>
+</section>
+
+<footer>صمم بحب في المغرب ⛰️ | Jibal.ma © 2026 | جميع الصور من Unsplash</footer>
+
+</body>
+</html>
